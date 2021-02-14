@@ -17,5 +17,6 @@ function minute(){
     {alert("It's minute " + currentMinute + " of today." )
 }}
 
+function catGuide()
 function vanishTitle(){
     let selectedElement = document.getElementById("sampleText").style.display = "none";   }

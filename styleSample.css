@@ -1,0 +1,19 @@
+.row {
+    background-color: antiquewhite;
+}
+
+.col ,
+[class*="col-"] {
+    padding-bottom: 25px;
+}
+
+.row ::first-letter{
+    color: blueviolet;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:xx-large;
+    line-height: 150% ;
+}
+
+@media screen and (max-width: 991px){
+    .row{text-align: justify;}
+}

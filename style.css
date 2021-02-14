@@ -1,7 +1,18 @@
 body{
-    color: black;
+    color:black;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(247, 240, 240);
+    background-color: rgb(59, 88, 86);
 }
 
-  
+body h1{
+    color:whitesmoke
+}
+
+.navbar-nav > li{
+    padding-bottom: 30px;
+}
+
+.col ,
+[class*="col-"] {
+    padding-bottom: 25px;
+}
