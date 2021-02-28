@@ -35,12 +35,10 @@ function wikiAPI(){
         //add the pageid to the URL
 
 function acceptUsersText(){
-  var wordArray = new Array();
   var userenteredText=document.getElementById("userenteredText").value;
   var textToString = userenteredText.toString();
   var smallerStrings = textToString.split(',' || ' ' || ', ');
-  wordArray.push(smallerStrings);
-  document.getElementById("seeArray").append(wordArray);}
+  document.getElementById("seeArray").append(smallerStrings);}
 
 function parseArray(){
   var wordsInput = document.getElementById("seeArray").innerHTML;
