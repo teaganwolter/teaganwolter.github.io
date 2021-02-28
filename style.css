@@ -1,12 +1,14 @@
 body{
-    color:black;
+    color:whitesmoke;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgb(59, 88, 86);
+    
 }
 
-body h1{
-    color:whitesmoke
-}
+[class*="card"]{
+    color: black}
+
+
 
 .navbar-nav > li{
     padding-bottom: 30px;
@@ -14,5 +16,11 @@ body h1{
 
 .col ,
 [class*="col-"] {
-    padding-bottom: 25px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+#map{
+    height: 400px;
+    width: 100%}
 }

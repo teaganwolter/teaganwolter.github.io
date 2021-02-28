@@ -1,0 +1,16 @@
+{"petList":[
+    {"nickname": "Kulti",
+    "fullName": "Tukulti-Ninurta James Wolter-Gauthier",
+    "species": "cat",
+    "color": "brown tabby"},
+
+    {"nickname": "Marie",
+    "fullName": "Marie Taram-Agade Wolter-Gauthier",
+    "species": "cat",
+    "color": "brown tabby"},
+    
+    {"nickname": "Cushy",
+    "fullName": "Mercutio Meridius Wolter",
+    "species": "cat",
+    "color": "brown tabby"}
+]}

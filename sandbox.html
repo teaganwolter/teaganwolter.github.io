@@ -11,51 +11,19 @@
     <link rel="stylesheet" href="styleSample.css">
      <!--my JavaScript-->
      <script src="JSsandbox.js"></script>
+     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid">
-      
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                 href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-                 <div class="dropdown-menu">
-                   <a class="dropdown-item" href="About_Me.html">About Me</a>
-                   <a class="dropdown-item" href="Teagan Wolter CV.pdf">CV</a>
-                 </div>
-              </li>
+ <!--Navigation bar-->
+ <div id="nav-placeholder"></div>
+ <script>$(function(){
+   $("#nav-placeholder").load("nav.html");});</script>
+ <!--end of Navigation bar-->
 
-              <li class="nav-item">
-                <a class="nav-link" href="site_slides.html">Dissertation Research</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sandbox.html">Sandbox</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      </div>
-
+      <div id="addElements"></div>
+      <div id="columns">
       <div class="container">
         <div class="row">    
           <div class="col-sm-6 col-md-3">
@@ -107,50 +75,21 @@
           </div>
         </div>
       </div>
-
-      <div class="container"
-      <h3 id="sampleText">Here is some text</h3>
     </div>
+
     
     <div class="container mt-5">
       <div class="h3">JS Samples</div>
       <button type="button" class="btn btn-dark" onclick="minute()">Get Minute</button>
       <button type="button" class="btn btn-dark" onclick="evalNumber()">Evaluate Number</button>
-      <button type="button" class="btn btn-dark" onclick="vanishTitle()">No text</button>
+      <button type="button" class="btn btn-dark" onclick="vanishText()">No text</button>
       
     </div>
     
+    <!--footer-->
+<div class="container-fluid" style="padding:0;margin:0" id="footer-placeholder"></div>
+<script>$(function(){$("#footer-placeholder").load("foot.html");});</script>
+<!--end of footer-->
+    
 </body>
 </html>
-   
- 
-
-
-
-
-
-
-
-
-
-  </ol>
-
-  <p class="h3">New Tasks for February 11 — JS Function</p>
-  <ol>
-    <li>Write a function that takes one parameter.</li>
-
-    <li>Call the function: functionName(parameter)</li>
-
-    <li>The parameter will be an array; see the sample array.</li>
-
-    <li>newArray = ["Orange", "Apple", "Mango", "Banana", "Papaya"]</li>
-
-    <li>Define this array outside of the function so it can be passed in as a parameter.</li>
-
-    <li>The function should return the item that is last alphabetically.</li>
-
-    <li>Test your function by adding new values to the array.</li>
-
-    <li>You can just console.log the value.</li>
-  </ol>
-</div>

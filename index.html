@@ -8,13 +8,23 @@
    <!-- Bootstrap CSS -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
    <link rel="stylesheet" href="style.css">
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-   <title>Website Ex</title>
+   <title>Home</title>
  </head>
 
  <body>
+  <!--Navigation bar-->
+<div id="nav-placeholder"></div>
+<script>$(function(){
+  $("#nav-placeholder").load("nav.html");});</script>
+<!--end of Navigation bar-->
+
   <div class="container">
     <h1 class="h1">Teagan Wolter</h1>
+    <h3 class="h5">Ph.D. Candiate at the University of Chicago</h3>
+    <h3 class="h5">focusing on the archaeology of the Bronze Age Middle East and Central Asia</h3>
   </div>
 
     <div class="container"
@@ -23,20 +33,20 @@
        
        </div>
        <div class="row">
-        <div class="col-xs-12 col-md-6 col-lg-4">
+        <div class="d-flex col-xs-12 col-md-6 col-lg-4">
           <div class="card" style="width: 18rem;">
-            <a href="About_Me.html"><img src="photoEx.jpg" class="card-img-top {rounded mx-auto d-block}"></a>
+            <a href="About_Me.html"><img src="photoEx.jpg" class="card-img-top rounded mx-auto d-block" height = "200px"></a>
             <div class="card-body">
               <h5 class="card-title">About Me</h5>
-              <p class="card-text">Click the image above for a full bio or the button below for my CV or contact information.</p>
-              <a href="Teagan Wolter CV.pdf" class="btn btn-primary">Get CV</a>
-              <a href="contact.html" class="btn btn-primary">Contact Info</a>
+              <p class="card-text">Click the image above for a full bio or choose a button below.</p>
+              <a href="Teagan Wolter CV.pdf" class="btn btn-outline-dark">Get CV</a>
+              <a href="contact.html" class="btn btn-outline-dark">Contact Info</a>
             </div>
             </div>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-4">
+            <div class="d-flex col-xs-12 col-md-6 col-lg-4">
               <div class="card" style="width: 18rem;">
-                <a href="site_slides.html"><img src="SealImage.jpg" class="card-img-top rounded mx-auto d-block"></a>
+                <a href="site_slides.html"><img src="SealImage.jpg" class="card-img-top rounded mx-auto d-block" height = "200px"></a>
                 <div class="card-body">
                   <h5 class="card-title">Research</h5>
                   <p class="card-text">Learn about my research here.</p>
@@ -47,9 +57,9 @@
               </div>
             </div>
             
-            <div class="col-xs-12 col-md-6 col-lg-4">
+            <div class="d-flex col-xs-12 col-md-6 col-lg-4">
               <div class="card" style="width: 18rem;">
-                <a href="site_slides.html"><img src="SealImage.jpg" class="card-img-top rounded mx-auto d-block"></a>
+                <a href="site_slides.html"><img src="catseal.jpg" class="card-img-top rounded mx-auto d-block" height = "200px"></a>
                 <div class="card-body">
                   <h5 class="card-title">Teaching and Lectures</h5>
                   <p class="card-text">Learn about my teaching experience here,
@@ -58,9 +68,9 @@
           </div>
           </div>
 
-          <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="d-flex col-xs-12 col-md-6 col-lg-4">
             <div class="card" style="width: 18rem;">
-              <a href="sandbox.html"><img src="sandbox.jpg" class="card-img-top rounded mx-auto d-block"></a>
+              <a href="sandbox.html"><img src="sandbox.jpg" class="card-img-top rounded mx-auto d-block" height = "200px"></a>
               <div class="card-body">
                 <h5 class="card-title">Sandbox</h5>
                 <p class="card-text">Assignments for Data Publication and other experiments.</p>
@@ -68,18 +78,31 @@
               </div>
               </div>
 
-          <footer class="footer mt-auto py-3 bg-light">
-            <div class="container">
-              <span class="text-muted">Contact: twolter@uchicago.edu</span>
-            </div>
-          </footer>
+              <div class="d-flex col-xs-12 col-md-6 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                  <a href="APIsandbox.html"><img src="sandbox.jpg" class="card-img-top rounded mx-auto d-block" height = "200px"></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Sandbox II</h5>
+                    <p class="card-text">Because Sandbox I was getting a bit cramped.</p>
+                  </div> 
+                  </div>
+                  </div>
 
-      </div>
+                  <div class="d-flex col-xs-12 col-md-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                      <a href="ochreAPI.html"><img src="ochresandbox.jpg" class="card-img-top rounded mx-auto d-block" height = "200px"></a>
+                      <div class="card-body">
+                        <h5 class="card-title">Sandbox III</h5>
+                        <p class="card-text">A place for playing with the OCHRE API.</p>
+                      </div> 
+                      </div>
+                      </div>
+<!--footer-->
+<div class="container-fluid" style="padding:0;margin:0" id="footer-placeholder"></div>
+<script>$(function(){$("#footer-placeholder").load("foot.html");});</script>
+<!--end of footer-->
 
-  
-      <!-- Option 1: Bootstrap Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-  
+</div>
 
     </body>
     </html>
