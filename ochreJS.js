@@ -2,7 +2,7 @@
 var parentElement = document.getElementById("ochreTableBody");
 
  //define api url
- var url = "http://ochre.lib.uchicago.edu/ochre?uuid=accd571b-bae3-4d42-93d9-58b65ec79300";
+ var url = "https://ochre.lib.uchicago.edu/ochre?uuid=accd571b-bae3-4d42-93d9-58b65ec79300";
 
  //first function, called on <body>
  function loadXML(){   //chain the next function to create the XHR
@@ -47,11 +47,37 @@ var parentElement = document.getElementById("ochreTableBody");
         td2.setAttribute('id', 'td_desc_'+i);
         td2.textContent = textList[i].children[3].innerHTML;
         document.getElementById('row_'+i).appendChild(td2);
-    };   
- }
+    };  }
+//add code to make titles button-links
 
 
-//in class challenge thing
-//for( i=0, i<2; i++){
-  //  var td3 = document.createElement('id');
-   // td3.setAttribute }
+   /* Roger's Code
+    var links = textList[i].children[4];
+        for (i = 0; i < 2; i++) {
+            var td3 = document.createElement(‘td’);
+            td3.setAttribute(‘id’, ‘td_photo_’ + i);
+            var uuid = links.children[i].attributes[1].nodeValue;
+            var url = "http://ochre.lib.uchicago.edu/ochre?uuid=” + uuid + “&preview”;
+            td3.setAttribute(‘href’, XMLrequest(url));
+            td3.textContent = links.children[i].innerHTML;
+            document.getElementById(‘row_’ + i).appendChild(td3); } */
+
+
+function showImage(i, linkList) {
+    var array = [];
+    for (j=0;j<linkList[i].children.length;j++){
+        var resource = linkList[i].children[j].outerHTML;
+        var parResource = new window.DOMParser().parseFromString(resource, "text/xml");
+        var uuid = parResource.getElementsByTagName('resource')[0].attributes[1].nodeValue;
+        //console.log(uuid);
+        var url = "https://ochre.lib.uchicago.edu/ochre?uuid=" + uuid + "&preview";
+        console.log(url);
+        array.push(url);
+    }
+    var display = document.getElementById("image display");
+    for (j=0;j<array.length;j++){
+        var img = document.createElement('img');
+        img.setAttribute('src',array[j]);
+        display.appendChild(img);
+    }
+    }

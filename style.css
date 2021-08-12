@@ -20,6 +20,28 @@ body{
     padding-bottom: 15px;
 }
 
+.footer ul li{
+   display: inline;
+   color: lightgray;
+   text-align: left;
+}
+
+
+
+.btn {
+    color: lightgray
+}
+  
+
+
+#copyright {
+   text-align: right;
+}
+
+.footer div{
+    display: inline-block;
+}
+
 #map{
     height: 400px;
     width: 100%}
